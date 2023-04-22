@@ -99,8 +99,6 @@
 
 These are just some of the most commonly used Bash commands, but there are many more. It's worth noting that most of these commands have additional options and arguments that can be used to customize their behavior, and you can find more information about them in the Bash manual or by using the `man` command followed by the name of the command.
 
-Certainly! Here's a summary of piping in Bash:
-
 # Piping in Bash
 
 Piping is a powerful feature in Bash that allows you to take the output of one command and use it as the input for another command. This allows you to chain together multiple commands to perform more complex operations.

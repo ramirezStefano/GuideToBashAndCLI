@@ -61,8 +61,6 @@
 | `kill [process_id]`      | Send a signal to stop the process with `[process_id]`              |
 | `killall [process_name]` | Send a signal to stop all processes with the name `[process_name]` |
 
-Sure, here are some more commonly used Bash commands:
-
 ## Networking
 
 | Command             | Description                                                                         |
@@ -152,3 +150,115 @@ ls | grep hello | wc -l | sort
 In this command, the output of `ls` is piped to the `grep` command, which searches for the word "hello" in the input. The output of `grep` is then piped to the `wc` command, which counts the number of lines that contain the word "hello". Finally, the output of `wc` is piped to the `sort` command, which sorts the output by the number of lines.
 
 By mastering piping, you can become much more efficient and productive on the command line.
+
+# Vim
+
+Vim is a powerful text editor that is included with most Unix-based operating systems, including Linux and macOS. It is designed to be used in a terminal window and provides a wide range of features for editing text, including syntax highlighting, code folding, and macro recording.
+
+## Basic Usage
+
+To open a file in Vim, you simply type the `vim` command followed by the name of the file you want to edit. For example:
+
+```
+vim example.txt
+```
+
+Once the file is open, you can use a wide range of commands to edit the text. Some basic commands include:
+
+- `i` to enter insert mode, where you can type new text
+- `Esc` to exit insert mode and return to command mode
+- `:w` to save the changes you've made to the file
+- `:q` to quit Vim
+- `:wq` to save the changes and quit Vim
+
+## Advanced Features
+
+Vim has many advanced features that can help you edit text more efficiently. For example:
+
+- Macros: You can record a series of keystrokes as a macro and then play it back to repeat the same series of commands on multiple lines of text.
+- Plugins: Vim has a wide range of plugins that you can use to add new features to the editor, such as code completion, file browsing, and syntax checking.
+- Customization: Vim is highly customizable, and you can configure it to work the way you want by editing the `vimrc` file.
+
+# Emacs
+
+Emacs is another powerful text editor that is widely used in the Unix/Linux world. Like Vim, it is designed to be used in a terminal window, but it also has a graphical user interface (GUI) version that can be run on most operating systems.
+
+## Basic Usage
+
+To open a file in Emacs, you simply type the `emacs` command followed by the name of the file you want to edit. For example:
+
+```
+emacs example.txt
+```
+
+Once the file is open, you can use a wide range of commands to edit the text. Some basic commands include:
+
+- `Ctrl + x, Ctrl + s` to save the changes you've made to the file
+- `Ctrl + x, Ctrl + c` to quit Emacs
+- `Ctrl + g` to cancel the current command or operation
+- `Ctrl + x, Ctrl + f` to open a new file for editing
+- `Ctrl + x, Ctrl + b` to switch between open files
+
+## Advanced Features
+
+Emacs has many advanced features that can help you edit text more efficiently. For example:
+
+- Macros: You can record a series of keystrokes as a macro and then play it back to repeat the same series of commands on multiple lines of text.
+- Modes: Emacs has modes for editing specific types of files, such as programming languages or markup languages. These modes provide syntax highlighting and other features specific to the language or format.
+- Plugins: Emacs has a wide range of plugins that you can use to add new features to the editor, such as code completion, version control integration, and file browsing.
+- Customization: Like Vim, Emacs is highly customizable, and you can configure it to work the way you want by editing the `.emacs` file.
+
+# The `>>` Tool
+
+The `>>` tool is a Bash command that appends the output of a command to the end of a file. Here's an example:
+
+```
+echo "Hello, world!" >> example.txt
+```
+
+In this command, the `echo` command outputs the text "Hello, world!" to the terminal window, and the `>>` tool appends the output to the end of the file `example.txt`. If the file doesn't exist, the `>>` tool creates it.
+
+You can use the `>>` tool with any command that produces output. For example, you could use it with the `ls` command to append a list of files in the current directory to a file:
+
+```
+ls >> filelist.txt
+```
+
+In this command, the output of `ls` (a list of files in the current directory) is appended to the end of the file `filelist.txt`.
+
+# Regular Expressions (Regex) 101
+
+Regular expressions, also known as regex, are a powerful tool for working with text. A regular expression is a pattern of characters that describes a set of strings. For example, the regular expression `hello` matches the strings "hello", "Hello", and "heLLo".
+
+## Basic Syntax
+
+Regular expressions are composed of characters that match specific patterns of text. Here are some examples of basic syntax:
+
+- `.`: Matches any single character
+- `[ ]`: Matches any one of the characters in the brackets
+- `[^ ]`: Matches any character not in the brackets
+- `*`: Matches zero or more occurrences of the previous character
+- `+`: Matches one or more occurrences of the previous character
+- `?`: Matches zero or one occurrence of the previous character
+- `|`: Matches either the expression on the left or the expression on the right
+
+For example, the regular expression `b[aeiou]t` matches the strings "bat", "bet", "bit", "bot", and "but".
+
+## Advanced Syntax
+
+Regular expressions can also include more advanced syntax to match more complex patterns. Here are some examples:
+
+- `^`: Matches the beginning of a line
+- `$`: Matches the end of a line
+- `()` and `|`: Matches groups of characters and allows you to specify alternatives within the group. For example, the regular expression `(cat|dog)` matches the strings "cat" and "dog".
+- `\`: Escapes special characters so they are treated as literal characters. For example, the regular expression `\.` matches a period.
+
+## Practical Uses
+
+Regular expressions are used in many different programming languages and tools, including Bash, Python, Perl, and more. Some common uses for regular expressions include:
+
+- Validating input: Regular expressions can be used to ensure that user input matches a specific pattern. For example, you could use a regular expression to validate an email address or a phone number.
+- Searching and replacing: Regular expressions can be used to search for specific patterns of text and replace them with other text. For example, you could use a regular expression to replace all occurrences of a word in a document.
+- Extracting information: Regular expressions can be used to extract specific pieces of information from a larger text. For example, you could use a regular expression to extract all of the email addresses from a file.
+
+Overall, regular expressions are a powerful tool for working with text, and they can be used to solve many different problems.

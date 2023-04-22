@@ -299,3 +299,21 @@ Here are some tricks that can help you be more productive with Bash:
 - Use `awk` to perform more complex operations on files. For example, `awk '{print $1}' file.txt` will display the first column of data in `file.txt`.
 
 By using these hotkeys, tips, and tricks, you can become more efficient and effective at using Bash to manage your files and directories.
+
+## Reserved symbols in Bash:
+
+- `.`: Represents the current directory. For example, `./script.sh` runs the `script.sh` script in the current directory.
+- `..`: Represents the parent directory. For example, `../file.txt` refers to a file named `file.txt` in the parent directory of the current directory.
+- `~`: Represents the home directory of the current user. For example, `~/file.txt` refers to a file named `file.txt` in the home directory of the current user.
+- `/`: Represents the root directory, the top-level directory in the file system hierarchy. For example, `/etc/passwd` refers to the `passwd` file in the `etc` directory at the root of the file system.
+
+These symbols are used in Bash commands to navigate the file system and perform operations on files and directories. Understanding how to use them is crucial for effective file management in Bash.
+
+Here are some examples of how to use these symbols in Bash:
+
+- `cd ..`: Changes the current working directory to the parent directory of the current directory.
+- `ls ~/`: Lists the contents of the home directory of the current user.
+- `cp file.txt /tmp/`: Copies the file `file.txt` to the `/tmp` directory.
+- `rm -r /var/log/`: Removes the entire `/var/log` directory and its contents.
+
+Remember to use these symbols carefully, as they can be powerful and potentially dangerous when used incorrectly.
